@@ -31,8 +31,7 @@
                 </section>
             </a>
             <footer class="post-card-meta">Author:
-                {% for author in site.data.authors %}
-                    {{author.username}}
+                {% for author in site.data.authors[1] %}
                     {% if author[1].username == post.author %}
                         {% if author[1].picture %}
                         <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ author[1].name }}" />
